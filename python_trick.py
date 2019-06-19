@@ -47,3 +47,6 @@ conn11 = MongoClient('mongodb://user:password@address:port/admin')  以admin身�
 Agglomorative可以对图像进行聚类
 
 ord("char") 得到对应的ascii码
+             
+# 对数组按第二列进行排序
+return_np = return_np[return_np[:,1].argsort()]
