@@ -37,6 +37,10 @@ sys.setdefaultencoding('utf-8')
 reload(sys)
 
 word转txt有可能会丢失文本框之内的字符，但先转成pdf的话就可以保留
+             
+#怎么提高pandas赋值的速度：
+             不要用会建立副本的method,用ix  ：https://stackoverflow.com/questions/26660040/faster-way-to-assign-new-values-in-pandas-dataframe
+             https://stackoverflow.com/questions/31569384/set-value-for-particular-cell-in-pandas-dataframe-with-iloc#
 
 pdf2txt:
 python3的话有pdfminer6和pdfplumber，pdfminer只支持python2,其中pdfplumber虽然基于pdfminer，但解析的顺序可能会和pdfminer的有所不同
