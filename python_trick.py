@@ -15,6 +15,12 @@ works = dict(sorted(works.items(), key=lambda d: d[0], reverse=True))
 def takeSecond(elem):
     return elem[1]
     
+或者
+import operator
+list1 = sorted(csv1, key=operator.itemgetter(1, 2))
+或者             
+sorted(list, key=lambda x: (x[0], -x[1])) #对两列排序 
+
 
 str2list:
 eval()
